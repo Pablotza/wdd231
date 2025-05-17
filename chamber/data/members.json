@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Café Tortoni",
+    "address": "Avenida de Mayo 825, Buenos Aires City",
+    "phone": "(011) 4342-4328",
+    "website": "https://www.cafetortoni.com.ar",
+    "image": "cafetortoni.jpg",
+    "membership": 3
+  },
+  {
+    "name": "El Ateneo Grand Splendid",
+    "address": "Avenida Santa Fe 1860, Buenos Aires City",
+    "phone": "(011) 4813-6052",
+    "website": "https://www.yenny-elateneo.com",
+    "image": "elateneo.jpg",
+    "membership": 3
+  },
+  {
+    "name": "La Brigada",
+    "address": "Estados Unidos 465, San Telmo, Buenos Aires City",
+    "phone": "(011) 4361-5557",
+    "website": "https://www.labridadarestaurant.com.ar",
+    "image": "labrigada.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Don Julio",
+    "address": "Guatemala 4691, Palermo, Buenos Aires City",
+    "phone": "(011) 4832-6058",
+    "website": "https://www.parrilladonjulio.com",
+    "image": "donjulio.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Galerías Pacífico",
+    "address": "Florida Street 753, Buenos Aires City",
+    "phone": "(011) 5555-5110",
+    "website": "https://www.galeriaspacifico.com.ar",
+    "image": "galeriaspacifico.png",
+    "membership": 2
+  },
+  {
+    "name": "La Cabrera",
+    "address": "Cabrera 5099, Palermo, Buenos Aires City",
+    "phone": "(011) 4831-7002",
+    "website": "https://www.lacabrera.com.ar",
+    "image": "lacabrera.png",
+    "membership": 2
+  },
+  {
+    "name": "Havanna",
+    "address": "Florida Street 888, Buenos Aires City",
+    "phone": "(011) 4312-9911",
+    "website": "https://www.havanna.com.ar",
+    "image": "havanna.png",
+    "membership": 2
+  }
+]

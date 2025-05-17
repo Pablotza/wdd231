@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Business Directory of the Chamber of Commerce of Buenos Aires City.">
+    <meta name="author" content="Pablo Emanuel Toloza">
+    <title>Buenos Aires Chamber of Commerce - Directory</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Business Directory - Buenos Aires Chamber of Commerce">
+    <meta property="og:description" content="Discover top companies and startups in Buenos Aires City.">
+    <meta property="og:image" content="./images/social-share.jpg">
+    <meta property="og:url" content="https://pablotza.github.io/wdd231/chamber/directory.html">
+    <link rel="stylesheet" href="./styles/directory.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Buenos Aires Chamber of Commerce</h1>
+            <nav aria-label="Main navigation">
+                <button id="menuBtn" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+                <ul id="navMenu" class="nav-menu">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="directory.html" class="active">Directory</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="view-toggle" role="toolbar" aria-label="View mode toggle">
+            <button id="gridView" aria-pressed="true">Grid View</button>
+            <button id="listView" aria-pressed="false">List View</button>
+        </section>
+        <section id="directory" class="grid" aria-live="polite"></section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>Contact: <a href="mailto:info@camaracaba.org">info@camaracaba.org</a> | (011) 5555-1234</p>
+            <p>© <span id="year"></span> | Pablo Emanuel Toloza | WDD 231</p>
+            <p>Last modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src="./scripts/directory.js" type="module"></script>
+</body>
+</html>
