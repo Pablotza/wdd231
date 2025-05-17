@@ -1,11 +1,9 @@
-// DOM elements
 const directory = document.getElementById('directory');
 const gridBtn = document.getElementById('gridView');
 const listBtn = document.getElementById('listView');
 const menuBtn = document.getElementById('menuBtn');
 const navMenu = document.getElementById('navMenu');
 
-// Toggle grid/list view
 gridBtn.addEventListener('click', () => {
     directory.classList.replace('list', 'grid');
     gridBtn.setAttribute('aria-pressed', 'true');
@@ -18,7 +16,6 @@ listBtn.addEventListener('click', () => {
     gridBtn.setAttribute('aria-pressed', 'false');
 });
 
-// Toggle mobile menu
 menuBtn.addEventListener('click', () => {
     const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
     menuBtn.setAttribute('aria-expanded', !isExpanded);
@@ -26,7 +23,6 @@ menuBtn.addEventListener('click', () => {
     menuBtn.textContent = isExpanded ? '☰' : '✕';
 });
 
-// Fetch and display members
 async function getMembers() {
     try {
         const response = await fetch('data/members.json');
@@ -44,7 +40,7 @@ function displayMembers(members) {
     members.forEach(member => {
         const card = document.createElement('div');
         card.classList.add('card');
-        // Map membership levels to labels
+
         const membershipLabel = {
             1: 'Bronze',
             2: 'Silver',
@@ -62,7 +58,6 @@ function displayMembers(members) {
     });
 }
 
-// Initialize
 getMembers();
 document.getElementById('year').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = new Date(document.lastModified).toLocaleString('en-US');
